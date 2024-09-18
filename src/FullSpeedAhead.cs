@@ -22,10 +22,8 @@ public class FullSpeedAheadMod : Mod
             // type == 3 is parry / nail_clash_tink
             // type == 4 is stun effect
             // type == 5 is ???
-            if (type != 3)
-            {
-                orig(self, type);
-            }
+            // not calling this means that there are no more FreezeMoments
+            // orig(self, type);
         };
     }
 }
